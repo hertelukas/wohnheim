@@ -3,7 +3,12 @@ const express       = require('express'),
 
 
 router.get('/', function(req, res){
-    res.send("This webiste works :(");
+    res.redirect('/login');
 });
+
+router.get('/login', function(req, res){
+    res.send("Login");
+
+})
 
 module.exports = router;
